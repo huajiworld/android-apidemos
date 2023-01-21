@@ -22,3 +22,9 @@ jobs:
           npm run lint
       - name: Run build
         run: npm run build
+      - name: up
+        uses: actions/upload-artifact@v3
+        with: 
+          path: ./apks/*.apk
+          
+        
